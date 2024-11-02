@@ -10,3 +10,9 @@ Work looking at converting Geosoft GDBs to useable open format for analysis, mac
 
 - HDF5
     - Nested
+
+# Example data
+- Plenty of GDBs to be found
+    - e.g. https://geoscience.data.qld.gov.au/ [search for geophysics, choose filetype on the left]
+        - https://geoscience.data.qld.gov.au/data/magnetic/mg001116
+
