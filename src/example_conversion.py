@@ -36,7 +36,8 @@ try:
         datasets[line] = xr.Dataset()
         for channel in data_dict[line]:
             data = data_dict[line][channel][:,0]
-            fiducial = np.arange(len(data))  # Create a fiducial coordinate
+            #fiducial = np.arange(len(data))  # Create a fiducial coordinate
+            fiducial = data = data_dict[line][channel][:,0]
             datasets[line][channel] = xr.DataArray(data, dims=['fiducial'], coords={'fiducial': fiducial})
     
             datasets[line][channel] = datasets[line][channel].expand_dims(dim='line')
