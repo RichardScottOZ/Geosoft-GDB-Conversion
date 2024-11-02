@@ -2,6 +2,7 @@
 Work looking at converting Geosoft GDBs to useable open format for analysis, machine learning and AI
 
 # Geosoft GDB info
+- "Geosoft database files are made up of straight binary data"
 - https://help.seequent.com/Oasismontaj/2023.2/Content/ss/prepare_om/work_with_databases/c/oasis_databases.htm
 	- To quote "proprietary 3-dimensional-file format"
 		- Lines, channels, elements
