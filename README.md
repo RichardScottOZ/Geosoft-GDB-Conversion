@@ -5,6 +5,27 @@ Work looking at converting Geosoft GDBs to useable open format for analysis, mac
 - https://help.seequent.com/Oasismontaj/2023.2/Content/ss/prepare_om/work_with_databases/c/oasis_databases.htm
 	- To quote "proprietary 3-dimensional-file format"
 		- Lines, channels, elements
+		
+## Lines
+- Name - TYPE number.version:flight
+
+## Channels
+- Names have no spaces
+
+## Elements
+- byte
+- unsigned 2-byte integer 
+- short 2 int
+- long 4 int
+- float 4
+- double 8
+- string
+
+Channels
+
+## Fiducial
+- Incrementing field
+		
 
 # Conversion format
 - What to store as?
