@@ -1,6 +1,9 @@
 # Geosoft-GDB-Conversion
 Work looking at converting Geosoft GDBs to useable open format for analysis, machine learning and AI
 
+# Geosoft GDB info
+- https://help.seequent.com/Oasismontaj/2023.2/Content/ss/prepare_om/work_with_databases/c/oasis_databases.htm
+
 # Conversion format
 - What to store as?
 - Zarr / netcdf
