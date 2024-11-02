@@ -9,4 +9,4 @@ Work looking at converting Geosoft GDBs to useable open format for analysis, mac
     - Although if you archive as netcdf you can kerchunk it later
 
 - HDF5
-    - Nexted
+    - Nested
