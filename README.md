@@ -3,6 +3,8 @@ Work looking at converting Geosoft GDBs to useable open format for analysis, mac
 
 # Geosoft GDB info
 - https://help.seequent.com/Oasismontaj/2023.2/Content/ss/prepare_om/work_with_databases/c/oasis_databases.htm
+	- To quote "proprietary 3-dimensional-file format"
+		- Lines, channels, elements
 
 # Conversion format
 - What to store as?
