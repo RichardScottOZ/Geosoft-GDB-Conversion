@@ -6,6 +6,11 @@ Work looking at converting Geosoft GDBs to useable open format for analysis, mac
 - https://help.seequent.com/Oasismontaj/2023.2/Content/ss/prepare_om/work_with_databases/c/oasis_databases.htm
 	- To quote "proprietary 3-dimensional-file format"
 		- Lines, channels, elements
+
+# Example data
+- Plenty of GDBs to be found
+    - e.g. https://geoscience.data.qld.gov.au/ [search for geophysics, choose filetype on the left]
+        - https://geoscience.data.qld.gov.au/data/magnetic/mg001116
 		
 ## Lines
 - Name - TYPE number.version:flight
@@ -38,8 +43,7 @@ Channels
 - HDF5
     - Nested
 
-# Example data
-- Plenty of GDBs to be found
-    - e.g. https://geoscience.data.qld.gov.au/ [search for geophysics, choose filetype on the left]
-        - https://geoscience.data.qld.gov.au/data/magnetic/mg001116
+
+# Compression
+- Looks like gzip as reported by Loop/Fatiando 
 
