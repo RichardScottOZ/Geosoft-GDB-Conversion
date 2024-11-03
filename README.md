@@ -45,5 +45,17 @@ Channels
 
 
 # Compression
-- Looks like gzip as reported by Loop/Fatiando 
+- Looks like gzip signature found as reported by Loop/Fatiando 
+    - but 1 and in the middle?
+
+## binwalk
+```bash
+ binwalk -e DB_1116.gdb
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+4996991       0x4C3F7F        Certificate in DER format (x509 v3), header length: 4, sequence length: 18436
+11004320      0xA7E9A0        MySQL MISAM index file Version 8
+11666672      0xB204F0        MySQL MISAM compressed data file Version 6
+```
 
