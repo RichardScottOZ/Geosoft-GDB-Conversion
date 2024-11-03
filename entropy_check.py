@@ -17,3 +17,12 @@ data = np.fromfile('data/DB_1116.gdb')
 # Calculate the entropy
 entropy = calculate_entropy(data)
 print('Entropy:', entropy)
+
+# Define the block size
+block_size = 256
+
+# Calculate the entropy for each block
+for i in range(0, len(data), block_size):
+    block = data[i:i+block_size]
+    entropy = calculate_entropy(block)
+    print(f'Block {i:block_size}: Entropy = {entropy:.4f}')
