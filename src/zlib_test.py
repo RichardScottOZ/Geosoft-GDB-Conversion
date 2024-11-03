@@ -27,4 +27,4 @@ def read_binary_with_decompression(file_path):
             print("Decompressed data (first 100 bytes):", decompressed_data[:100])
 
 # Replace with your actual file path
-read_binary_with_decompression('dats/DB_1116.gdb')
+read_binary_with_decompression('data/DB_1116.gdb')
