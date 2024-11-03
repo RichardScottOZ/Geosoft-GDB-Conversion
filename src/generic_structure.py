@@ -27,4 +27,4 @@ def read_binary(file_path):
     print("Date-Time at 0x130:", date_time)
 
 # Path to your binary file
-read_binary('/path/to/DB_1116.gdb')
+read_binary('data/DB_1116.gdb')
