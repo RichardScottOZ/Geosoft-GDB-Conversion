@@ -11,6 +11,10 @@ Work looking at converting Geosoft GDBs to useable open format for analysis, mac
 - Plenty of GDBs to be found
     - e.g. https://geoscience.data.qld.gov.au/ [search for geophysics, choose filetype on the left]
         - https://geoscience.data.qld.gov.au/data/magnetic/mg001116
+     
+# Binary Headers
+- Need to compare the first part of a reasonable sample of files
+  	- QLD has 300, perhaps pull those
 		
 ## Lines
 - Name - TYPE number.version:flight
