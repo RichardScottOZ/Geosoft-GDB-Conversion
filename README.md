@@ -7,6 +7,15 @@ Work looking at converting Geosoft GDBs to useable open format for analysis, mac
 	- To quote "proprietary 3-dimensional-file format"
 		- Lines, channels, elements
 
+## Data storage
+### VV
+- Vector Vectors - like (18,2) - 18 records, 0 has the actual measurements, 1 has the fiducial.
+### VA
+- Vectory Array - like (18,13) - 18 records, e.g. IP data so it can show up as plotted lines in the interface
+
+- Given it is a 'spreadsheet' - you can get (0,) data as well for empty channels (or fields?)
+        
+
 # Example data
 - Plenty of GDBs to be found
     - e.g. https://geoscience.data.qld.gov.au/ [search for geophysics, choose filetype on the left]
