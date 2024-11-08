@@ -55,6 +55,8 @@ Channels
 
 - HDF5
     - Nested
+    - Geoh5 
+        - would need to implicitly make dummy coordinates
 
 
 # Compression
