@@ -1,6 +1,14 @@
 # Geosoft-GDB-Conversion
 Work looking at converting Geosoft GDBs to useable open format for analysis, machine learning and AI
 
+## 📋 Important: Feasibility Analysis Available
+
+**See [GDB_REVERSE_ENGINEERING_FEASIBILITY_ANALYSIS.md](GDB_REVERSE_ENGINEERING_FEASIBILITY_ANALYSIS.md)** for a comprehensive analysis of GDB reverse engineering feasibility.
+
+**Key Finding**: While reverse engineering exploration is educational, **using the official [geosoft.gxpy](https://github.com/GeosoftInc/gxpy) Python API is strongly recommended** for all practical applications. See `src/example_conversion.py` for a working example.
+
+---
+
 # Geosoft GDB info
 - "Geosoft database files are made up of straight binary data"
 - https://help.seequent.com/Oasismontaj/2023.2/Content/ss/prepare_om/work_with_databases/c/oasis_databases.htm
@@ -73,4 +81,43 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 11004320      0xA7E9A0        MySQL MISAM index file Version 8
 11666672      0xB204F0        MySQL MISAM compressed data file Version 6
 ```
+
+**Note**: binwalk results show false positives. See feasibility analysis for details.
+
+---
+
+# Recommended Approach: Official geosoft.gxpy API
+
+For practical GDB file access, use the official Python API:
+
+```bash
+pip install geosoft
+```
+
+Example usage (see `src/example_conversion.py` for complete working code):
+
+```python
+import geosoft.gxpy.gdb as gxdb
+import geosoft.gxpy.gx as gxp
+import numpy as np
+
+with gxp.GXpy() as gxp:
+    gdb = gxdb.Geosoft_gdb.open('your_file.gdb')
+    
+    # List available data
+    lines = gdb.list_lines()
+    channels = gdb.list_channels()
+    
+    # Read data
+    for line in lines:
+        for channel in channels:
+            data = gdb.read_channel_vv(line, channel)
+            np_array = np.asarray(data)
+            # Process your data here
+```
+
+**Resources**:
+- Official API: https://github.com/GeosoftInc/gxpy
+- Documentation: https://geosoftinc.github.io/gxpy/
+- Full analysis: [GDB_REVERSE_ENGINEERING_FEASIBILITY_ANALYSIS.md](GDB_REVERSE_ENGINEERING_FEASIBILITY_ANALYSIS.md)
 
